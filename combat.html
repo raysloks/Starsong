@@ -3,44 +3,50 @@ layout: default
 title: Combat
 ---
 <h1>Actions</h1>
-<p>Every turn you may take one action and one half action.</p>
-<p>You may freely exchange one action for two half actions and vice versa.</p>
+<p>Every turn you may take one action.</p>
 
 <h2>Melee Attack</h2>
-<p>Make a Melee Attack contest versus your target's Melee Defense.</p>
-<p>This contest is special, in that you rolling a natural 20 means you automatically win, and you rolling a natural 1 means you automatically lose.</p>
+<p>Make a Melee Attack test versus your target's Melee Defense.</p>
+<p>This test is special. If you roll a natural 20 you automatically win. If you roll a natural 1 you automatically lose.</p>
 <p>If you win, you deal your weapon's damage dice to the target.</p>
 
+<i>Going back and forth between having this be a contest, or having it as a test.</i>
+
 <h2>Ranged Attack</h2>
+<p>Make a Ranged Attack test versus your target's Ranged Defense plus 1 per 10 paces the target is further than your weapon's mid range.</p>
 <p>Making a ranged attack provokes attacks of opportunity.</p>
 
+<i>Requires more research, refining, and testing.</i>
+
 <h2>Move</h2>
-<p>Move 6 paces.</p>
+<p>Move up to 5 paces.</p>
 
 <h2>Recover</h2>
-<p>Regain 1d6 + Constitution hit points, but you need to make a Constitution save or gain a stack of Exhaustion.</p>
+<p>Regain 1d6 + Constitution hit points, but you need to make a DC 16 Constitution save or gain a level of Exhaustion.</p>
 
-<h2>Half Actions</h2>
-<p></p>
+<h2>Sprint</h2>
+<p>Move up to 1d6 + 5 paces.</p>
+<p>Make a DC 16 Constitution save or gain a level of exhaustion.</p>
 
-<h3>Sprint</h3>
-<p>Move 1d6 paces.</p>
+<i>May be a bit slow to make two separate rolls when recovering or sprinting. Testing required.</i>
 
-<h2>Reactions</h2>
-<p></p>
-
-<h3>Attack of Opportunity</h3>
-<p></p>
+<h2>Charge</h2>
+<p>Move up to 5 paces towards a target and make a melee attack against it.</p>
 
 <h1>Momentum</h1>
-<p>When you win a contest versus an opponent, you gain a stack of momentum.</p>
+<p>When you hit an attack or an attack against you misses, you gain a stack of momentum.</p>
 <p>Each stack of momentum grants you a +2 bonus to any combat related rolls.</p>
 <p>You can normally have up to 3 stacks of momentum.</p>
-<p>If you lose a contest, you lose all stacks of momentum.</p>
+<p>If you miss an attack or get hit by an attack, you lose all stacks of momentum.</p>
+
+<h1>Attacks of Opportunity</h1>
+<p>An attack of opportunity is for most purposes a free melee attack that may be made under a few circumstances.</p>
+
+<i>Considering adding a penalty to attacks of opportunity made after the first in a round. Perhaps even all attacks of opportunity.</i>
 
 <h1>Flanking</h1>
 <p>If there is only one enemy adjacent to you, you are marking that enemy.</p>
-<p>If a marked enemy makes a melee attack against someone other than you or is the target of a melee attack, you may make an attack opportunity against them.</p>
+<p>If a marked enemy makes a melee attack against someone other than you; is the target of a melee attack; or uses the Sprint or Charge action, you may make an attack of opportunity against them.</p>
 
 <h1>Damage</h1>
 <p>An attack that hits will always deal at least 1 damage, even if it is reduced by armor.</p>
@@ -48,8 +54,10 @@ title: Combat
 <p>If an attack reduces the target to 0 hit points, it inflicts a major wound. If the attack would already inflict a wound, it inflicts a fatal wound.</p>
 <p>An attack can only inflict a single wound.</p>
 
+<i>The rule for how minor wounds occur is the one part I am unsure about. It gives daggers and such a larger chance to inflict a minor wound, which I guess makes sense. But I'm not sure that's what I want.</i>
+
 <h2>Wounds</h2>
 <p>Minor wounds will never incur permanent penalties.</p>
-<p>Major wounds may incur permanent penalties, and have a low chance of being fatal.</p>
+<p>Major wounds may incur permanent penalties, and have a low chance of being fatal if not treated.</p>
 <p>Fatal wounds are almost always, as the name suggests, fatal.</p>
 <p>Tables can be found <a href="wounds.html">here</a>.</p>

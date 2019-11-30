@@ -48,14 +48,16 @@ layout: default
 <h3>Melee</h3>
 <p>Your base Melee attack bonus is equal to:</p>
 <p>(Strength * 2 + Dexterity) / 3</p>
-<p>Your base Melee defense bonus is equal to:</p>
-<p>(Agility * 2 + Dexterity) / 3</p>
+<p>Your base Melee defense is equal to:</p>
+<p>11 + (Agility * 2 + Dexterity) / 3</p>
 <p>These are rounded to the nearest integer.</p>
 <h4>Unarmed</h4>
-<p>If you are unarmed, you WIP</p>
+<p>If you are unarmed, you have a -6 penalty to Melee attack.</p>
 
 <h3>Ranged</h3>
-<p>Your base Ranged bonus is equal to:</p>
+<p>Your base Ranged bonus is equal to your Dexterity.</p>
+
+<i>This is most certainly gonna be changed to something else.</i>
 
 <h1>Skills</h1>
 <p>You can normally put up to 3 ranks into a skill.</p>
@@ -81,14 +83,23 @@ layout: default
 <h1>Advancement</h1>
 
 <h2>Experience</h2>
-<p>As a guideline, characters receive 1 xp for a low-risk accomplishment, 2 xp for a moderate-risk accomplishment, and 4 xp for a high-risk accomplishment.</p>
+<table>
+    <tr><th>Accomplishment</th><th>Experience</th></tr>
+    <tr><td> </td><td>1 xp</td></tr>
+    <tr><td> </td><td>2 xp</td></tr>
+    <tr><td> </td><td>4 xp</td></tr>
+    <tr><td> </td><td>8 xp</td></tr>
+</table>
 <p>Characters can also receive xp from various <a href="downtime.html">Downtime</a> activities.</p>
 
 <h2>Advancing</h2>
 <p>During downtime you may spend xp to advance your character.</p>
 <table>
-    <tr><td>Advance a career</td><td>5 xp</td></tr>
-    <tr><td>Enter a new career</td><td>10 xp</td></tr>
+    <tr><td>Advance a career</td><td>10 xp</td></tr>
+    <tr><td>Enter a connected career</td><td>10 xp</td></tr>
+    <tr><td>Enter a new basic career</td><td>20 xp</td></tr>
 </table>
+
+<p>You cannot advance a primary stat past 9. Racial modifiers affect this number; for example: an orc can advance their Strength all the way to 12, but their Dexterity is limited to 5.</p>
 
 <h1><a href="character_creation.html">Character Creation</a></h1>
