@@ -2,23 +2,41 @@
 layout: default
 title: Combat
 ---
-<h1>Turns</h1>
-<p>At the start of a time-critical encounter, every player rolls a d20.</p>
 
+<h1>Basics</h1>
+
+<h2>Melee Strike</h2>
+<p>Make a Melee Offense test versus the target's Melee Defense.</p>
+<p>This test is special. If you roll a natural 20 you automatically succeed. If you roll a natural 1 you automatically fail.</p>
+<p>If you succeed, your attack hits and you deal your weapon's damage dice to the target.</p>
+
+<h2>Ranged Shot</h2>
+<p>Make a Ranged Offense test versus your target's Ranged Defense plus 1 per 10 paces the target is further than your weapon's mid range.</p>
+<p>This test is special. If you roll a natural 20 you automatically succeed. If you roll a natural 1 you automatically fail.</p>
+<p>If you succeed, your attack hits and you deal your weapon's damage dice to the target.</p>
+
+<h2>Movement</h2>
+<p>Most movement in combat occurs through the actions Charge, Move, and Sprint.</p>
+
+<h1>Turns</h1>
+<p>At the start of a time-critical encounter, every player rolls a d20 to use as their Initiative. This value may be modified by various abilities, but it is always a value between 1 and 20.</p>
+<p>Regardless, record the result as your Initiative. You could do this via sticky notes or some sort of dry-erase stuff.</p>
+<p>The players begin taking turns, starting at the highest Initiative.</p>
 
 <h1>Actions</h1>
 <p>Every turn you may take one action.</p>
+<p></p>
 
 <h2>Melee Attack</h2>
-<p>Make a Melee Attack test versus your target's Melee Defense.</p>
-<p>This test is special. If you roll a natural 20 you automatically win. If you roll a natural 1 you automatically lose.</p>
-<p>If you win, you deal your weapon's damage dice to the target.</p>
+<p>Make a Melee Strike against an adjacent target.</p>
+<p>Allows Opportunity Attacks, except from the target.</p>
+<p>Your target also allows Opportunity Attacks, except from you.</p>
 
 <blockquote>Going back and forth between having this be a contest, or having it as a test.</blockquote>
 
 <h2>Ranged Attack</h2>
-<p>Make a Ranged Attack test versus your target's Ranged Defense plus 1 per 10 paces the target is further than your weapon's mid range.</p>
-<p>Making a ranged attack provokes attacks of opportunity.</p>
+<p>Make a Ranged Shot against a target in range.</p>
+<p>Allows Opportunity Attacks.</p>
 
 <blockquote>Requires more research, refining, and testing.</blockquote>
 
@@ -26,16 +44,26 @@ title: Combat
 <p>Move up to 5 paces.</p>
 
 <h2>Recover</h2>
-<p>Regain 1d6 + Constitution hit points, but you need to make a DC 16 Constitution save or gain a level of Exhaustion.</p>
+<p>Regain 1d6 hit points, but you need to make a DC 16 Constitution save or gain a level of Exhaustion.</p>
 
 <h2>Sprint</h2>
 <p>Move up to 1d6 + 5 paces.</p>
 <p>Make a DC 16 Constitution save or gain a level of exhaustion.</p>
+<p>Allows Opportunity Attacks from anyone you move away from or pass on the way.</p>
 
 <blockquote>May be a bit slow to make two separate rolls when recovering or sprinting. Testing required.</blockquote>
 
 <h2>Charge</h2>
-<p>Move up to 5 paces towards a target and make a melee attack against it.</p>
+<p>Move up to 5 paces towards a target and make a Melee Strike against it.</p>
+<p>Allows Opportunity Attacks from anyone you move away from or pass on the way.</p>
+
+<h2>Hold</h2>
+<p>Put your turn on hold. After another player's turn you may interject, resuming your turn then.</p>
+<p>Holding your turn does not change your Initiative.</p>
+<p>You must finish your held turn before you can take your next turn.</p>
+<p>Hold refunds the action spent on it when you resume your turn.</p>
+
+<blockquote>Is this description clear? It may need refining.</blockquote>
 
 <h1>Momentum</h1>
 <p>When you hit an attack or an attack against you misses, you gain a stack of momentum.</p>
@@ -43,22 +71,20 @@ title: Combat
 <p>You can normally have up to 3 stacks of momentum.</p>
 <p>If you miss an attack or get hit by an attack, you lose all stacks of momentum.</p>
 
-<h1>Attacks of Opportunity</h1>
-<p>An attack of opportunity is for most purposes a free melee attack that may be made under a few circumstances.</p>
-
-<blockquote>Considering adding a penalty to attacks of opportunity made after the first in a round. Perhaps even all attacks of opportunity.</blockquote>
-
 <h1>Flanking</h1>
 <p>If there is only one enemy adjacent to you, you are marking that enemy.</p>
-<p>If a marked enemy makes a melee attack against someone other than you; is the target of a melee attack; or uses the Sprint or Charge action, you may make an attack of opportunity against them.</p>
+<p>If a marked enemy "allows Opportunity Attacks" from you, you may make an Opportunity Attack against them.</p>
+
+<h1>Opportunity Attacks</h1>
+<p>An Opportunity Attack, also known as an attack of opportunity, is for most purposes a free melee attack that may be made under a few circumstances.</p>
+
+<blockquote>Considering adding a penalty to opportunity attacks made after the first in a round. Perhaps even all opportunity attacks.</blockquote>
 
 <h1>Damage</h1>
 <p>An attack that hits will always deal at least 1 damage, even if it is reduced by armor.</p>
-<p>If an attack rolls the maximum value on any of its damage dice, it also inflicts a minor wound.</p>
+<p>If the attacker has 3 or more stacks of momentum after hitting the attack, it also inflicts a minor wound.</p>
 <p>If an attack reduces the target to 0 hit points, it inflicts a major wound. If the attack would already inflict a wound, it inflicts a fatal wound.</p>
 <p>An attack can only inflict a single wound.</p>
-
-<blockquote>The rule for how minor wounds occur is the one part I am unsure about. It gives daggers and such a larger chance to inflict a minor wound, which I guess makes sense. But I'm not sure that's what I want.</blockquote>
 
 <h2>Wounds</h2>
 <p>Minor wounds will never incur permanent penalties.</p>
