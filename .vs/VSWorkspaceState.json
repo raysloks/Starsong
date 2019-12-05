@@ -4,8 +4,9 @@
     "\\areas",
     "\\areas\\smavast",
     "\\races",
-    "\\world"
+    "\\world",
+    "\\world\\dungeons"
   ],
-  "SelectedNode": "\\wounds.html",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
