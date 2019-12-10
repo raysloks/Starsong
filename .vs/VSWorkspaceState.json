@@ -5,8 +5,9 @@
     "\\careers",
     "\\races",
     "\\world",
-    "\\world\\dungeons"
+    "\\world\\dungeons",
+    "\\world\\monsters"
   ],
-  "SelectedNode": "\\world\\dungeons\\abandoned_shrine.html",
+  "SelectedNode": "\\races\\elf.html",
   "PreviewInSolutionExplorer": false
 }
