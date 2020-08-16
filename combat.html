@@ -27,7 +27,7 @@ title: Combat
 
 <h1>Actions</h1>
 <p>Every turn you may take one action.</p>
-<p></p>
+<p>Note that the actions listed here are not an exhaustive list.</p>
 
 <h3>Melee Attack</h3>
 <h4>Action</h4>
@@ -39,8 +39,8 @@ title: Combat
 
 <h3>Ranged Attack</h3>
 <h4>Action</h4>
-<p>Make a Shot against a target in range.</p>
 <p>Allows Opportunity Attacks.</p>
+<p>Make a Shot against a target in range.</p>
 
 <blockquote>Requires more research, refining, and testing.</blockquote>
 
@@ -48,22 +48,20 @@ title: Combat
 <h4>Action</h4>
 <p>Move up to 5 paces.</p>
 
-<h3>Recover</h3>
-<h4>Action</h4>
-<p>Regain 1d6 hit points, but you need to make a DC 16 Constitution save or gain a level of Exhaustion.</p>
-
 <h3>Sprint</h3>
 <h4>Action</h4>
-<p>Move up to 1d6 + 5 paces.</p>
+<p>Move up to 10 paces.</p>
 <p>Make a DC 16 Constitution save or gain a level of exhaustion.</p>
 <p>Allows Opportunity Attacks from anyone you move away from or pass on the way.</p>
-
-<blockquote>May be a bit slow to make two separate rolls when recovering or sprinting. Testing required.</blockquote>
 
 <h3>Charge</h3>
 <h4>Action</h4>
 <p>Move up to 5 paces towards a target and make a Strike against it.</p>
 <p>Allows Opportunity Attacks from anyone you move away from or pass on the way.</p>
+
+<h3>Recover</h3>
+<h4>Action</h4>
+<p>Regain 3 hit points. Make a DC 12 Constitution save or gain a level of exhaustion.</p>
 
 <h3>Hold</h3>
 <h4>Action</h4>
@@ -74,8 +72,11 @@ title: Combat
 
 <blockquote>Is this description clear? It may need refining.</blockquote>
 
+<h1>Reactions</h1>
+<p></p>
+
 <h1>Momentum</h1>
-<p>When you hit an attack or an attack against you misses, you gain a stack of momentum.</p>
+<p>When you hit an attack, you gain a stack of momentum.</p>
 <p>Each stack of momentum grants you a +2 bonus to any combat related rolls.</p>
 <p>You can normally have up to 3 stacks of momentum.</p>
 <p>If you miss an attack or get hit by an attack, you lose all stacks of momentum.</p>
@@ -90,26 +91,31 @@ title: Combat
 <blockquote>Considering adding a penalty to opportunity attacks made after the first in a round. Perhaps even all opportunity attacks.</blockquote>
 
 <h1>Damage</h1>
-<p>An attack that hits will always deal at least 1 damage, even if it is reduced by armor.</p>
-<p>If the attacker has 3 or more stacks of momentum after hitting the attack, and the attack dealt more than 1 damage, it also inflicts a minor wound.</p>
-<p>If an attack reduces the target to 0 hit points, it inflicts a major wound. If the attack would already inflict a wound, it inflicts a fatal wound.</p>
-<p>An attack can only inflict a single wound.</p>
+<p>A hit will always deal at least 1 nonlethal damage, even if it is reduced to 0 or below by Armor or such.</p>
+<p>If the attacker has 3 or more stacks of momentum after hitting, it also inflicts a minor wound.</p>
+<p>If a hit reduces the target to 0 hit points, or they were already at 0 hit points, it inflicts a major wound. If the hit would already inflict a wound, it inflicts a fatal wound.</p>
+<p>A hit can only inflict a single wound.</p>
 
-<h2>Wounds</h2>
+<h2>Nonlethal</h2>
+<p>Can never inflict fatal wounds and always uses the unarmed wounds table.</p>
+
+<h1>Wounds</h1>
 <p>Minor wounds will never incur permanent penalties.</p>
 <p>Major wounds may incur permanent penalties, and have a low chance of being fatal if not treated.</p>
 <p>Fatal wounds are almost always, as the name suggests, fatal.</p>
 <p>Tables can be found <a href="wounds.html">here</a>.</p>
-
-<h1>Reactions</h1>
-<p></p>
 
 <h1>Conditions</h1>
 <p></p>
 
 <h2>Stunned</h2>
 <p>May not take any actions or reactions.</p>
-<p>Attacks against stunned targets are treated as though the attacker has 3 stacks of momentum.</p>
+<p>Strikes against stunned targets have advantage.</p>
 
 <h2>Prone</h2>
-<p>May only </p>
+<p>Movement limited to one pace.</p>
+<p>Disadvantage on Agility tests.</p>
+<p>Disadvantage on Strikes and Shots, unless the weapon has the 'prone' tag.</p>
+<p>Strikes against prone targets have advantage.</p>
+<p>Shots against prone targets have disadvantage.</p>
+<p>May use an action to stand up, allowing Opportunity Attacks.</p>

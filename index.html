@@ -20,6 +20,7 @@ layout: default
     <li>Conditions have been slightly reworked.</li>
     <li>Refined rules surrounding experience.</li>
     <li>Tiny changes to wounds.</li>
+    <li>Tiny changes to momentum.</li>
 </ul>
 
 <h1>Character Stats</h1>
@@ -30,8 +31,7 @@ layout: default
 <p></p>
 
 <h3>Strength</h3>
-<p>Attacking.</p>
-<p>Carrying stuff.</p>
+<p>The maximum damage you can deal with a single melee attack.</p>
 
 <h3>Agility</h3>
 <p>Avoiding attacks.</p>
@@ -58,7 +58,7 @@ layout: default
 
 <h3>Hit Points</h3>
 <p>Your base hit point total is equal to:</p>
-<p>5 + Constitution</p>
+<p>Constitution + Level</p>
 
 <h3>Armor</h3>
 <p>Every point of Armor reduces the raw damage you take by 1.</p>
@@ -67,7 +67,7 @@ layout: default
 <p>Your base Melee Offense is equal to:</p>
 <p>(Strength * 2 + Dexterity) / 3</p>
 <p>Your base Melee Defense is equal to:</p>
-<p>10 + (Agility * 2 + Dexterity) / 3</p>
+<p>8 + (Agility * 2 + Dexterity) / 3</p>
 <p>These are rounded to the nearest integer.</p>
 
 <h4>Unarmed</h4>
@@ -80,7 +80,7 @@ layout: default
 
 <h1>Skills</h1>
 <p>You can normally put up to 3 ranks into a skill.</p>
-<p>The first rank allows you to make relevant Skill checks without disadvantage.</p>
+<p>The first rank allows you to make relevant skill checks without disadvantage.</p>
 <p>Additionally, each rank grants a +2 bonus.</p>
 
 <h1>Gameplay</h1>
@@ -100,6 +100,9 @@ layout: default
 <p>Your opponent does the same.</p>
 <p>Whoever has the largest result wins.</p>
 <p>If both results are the same, nothing happens most of the time.</p>
+
+<h3>Advantage and Disadvantage</h3>
+<p></p>
 
 <h2>Phases</h2>
 <p></p>
@@ -137,11 +140,13 @@ layout: default
 <p></p>
 
 <h2>Leveling Up</h2>
+<p>When leveling up, you may either advance your current career.</p>
 <ul>
     <li>Increase one Primary Stat by 1.</li>
     <li>Increase Hit Points by 1.</li>
-    <li>Gain one perk.</li>
+    <li>Gain one available career feature.</li>
     <li>Gain one skill rank.</li>
+    <li>Gain one available perk.</li>
 </ul>
 
 <p>You cannot advance a primary stat past 9. Racial modifiers affect this number; for example: an orc can advance their Strength all the way to 12, but their Dexterity is limited to 6.</p>

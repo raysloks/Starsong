@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<script>
+
+    window.addEventListener("load", function () {
+
+        let names = ["Marcus", "Marko", "Filip", "Antonio", "Darry", "Emil"];
+
+        let posts = [];
+
+        for (let i = 0; i < names.length; ++i) {
+            posts[i] = { initiative: Math.floor(Math.random() * 20) + 1, name: names[i] };
+        }
+
+        posts.sort((a, b) => (a.initiative < b.initiative) ? 1 : -1);
+
+        let table = document.createElement("table");
+        table.innerHTML = "<tr><th>Initiative</th><th>Name</th></tr>";
+
+        for (let i of posts) {
+            row = table.insertRow();
+            cell = row.insertCell();
+            cell.innerHTML = i.initiative;
+            cell = row.insertCell();
+            cell.innerHTML = i.name;
+        }
+        
+        document.getElementById("main_content").appendChild(table);
+    });
+
+</script>
