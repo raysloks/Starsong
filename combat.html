@@ -6,17 +6,15 @@ title: Combat
 <h1>Basics</h1>
 
 <h2>Strike</h2>
-<p>Make a Melee Offense test versus the target's Melee Defense.</p>
-<p>This test is special. If you roll a natural 20 you automatically succeed. If you roll a natural 1 you automatically fail.</p>
-<p>If you succeed, your attack hits and you deal your weapon's damage dice to the target.</p>
+<p>Roll your weapon's damage dice, exploding. The result is capped to your Strength. Deal the final result as damage to your target.</p>
+<p>If a Strike has advantage, you may reroll each damage die once. If a Strike has disadvantage, the damage dice do not explode.</p>
 
 <h2>Shot</h2>
-<p>Make a Ranged Offense test versus your target's Ranged Defense plus 1 per 10 paces the target is further than your weapon's mid range.</p>
-<p>This test is special. If you roll a natural 20 you automatically succeed. If you roll a natural 1 you automatically fail.</p>
-<p>If you succeed, your attack hits and you deal your weapon's damage dice to the target.</p>
+<p>Roll your weapon's damage dice, exploding. The result is capped to the weapon's damage limit. Deal the final result as damage to your target.</p>
+<p>If a Shot has advantage, you may reroll each damage die once. If a Shot has disadvantage, the damage dice do not explode.</p>
 
 <h2>Movement</h2>
-<p>Most movement in combat occurs through the actions Charge, Stride, and Sprint.</p>
+<p>Most movement in combat occurs through the actions Charge, Stride, and Dash.</p>
 
 <h1>Turns</h1>
 <p>At the start of a time-critical encounter, every player rolls a d20 to use as their Initiative. This value may be modified by various abilities, but it is always a value between 1 and 20.</p>
@@ -26,32 +24,25 @@ title: Combat
 <blockquote>TODO when you start dying or something, move Initiative to right before whosever turn it is right now. This way your allies get a whole round to save you. Grabbed from Pathfinder 2e.</blockquote>
 
 <h1>Actions</h1>
-<p>Every turn you may take one action.</p>
+<p>On your turn you may take one action.</p>
 <p>Note that the actions listed here are not an exhaustive list.</p>
 
 <h3>Melee Attack</h3>
 <h4>Action</h4>
 <p>Make a Strike against an adjacent target.</p>
-<p>Allows Opportunity Attacks, except from the target.</p>
-<p>Your target also allows Opportunity Attacks, except from you.</p>
-
-<blockquote>Going back and forth between having this be a contest, or having it as a test.</blockquote>
 
 <h3>Ranged Attack</h3>
 <h4>Action</h4>
 <p>Allows Opportunity Attacks.</p>
 <p>Make a Shot against a target in range.</p>
 
-<blockquote>Requires more research, refining, and testing.</blockquote>
-
 <h3>Stride</h3>
 <h4>Action</h4>
-<p>Move up to 5 paces.</p>
+<p>Move a number of paces equal to or less than your Speed.</p>
 
-<h3>Sprint</h3>
+<h3>Dash</h3>
 <h4>Action</h4>
-<p>Move up to 10 paces.</p>
-<p>Make a DC 16 Constitution save or gain a level of exhaustion.</p>
+<p>Move a number of paces equal to or less than your Speed plus 1d6.</p>
 <p>Allows Opportunity Attacks from anyone you move away from or pass on the way.</p>
 
 <h3>Charge</h3>
@@ -61,49 +52,50 @@ title: Combat
 
 <h3>Recover</h3>
 <h4>Action</h4>
-<p>Regain 3 hit points. Make a DC 12 Constitution save or gain a level of exhaustion.</p>
+<p>Regain a number of hit points equal to your Constitution, and reduce your maximum hit points by 1.</p>
+<p>Lost maximum hit points can be recovered by resting.</p>
 
 <h3>Hold</h3>
 <h4>Action</h4>
-<p>Put your turn on hold. After another player's turn you may interject, resuming your turn then.</p>
+<p>Put your turn on hold. After any other creature's action you may interject, using your reaction to perform an action.</p>
 <p>Holding your turn does not change your Initiative.</p>
-<p>You must finish your held turn before you can take your next turn.</p>
-<p>Hold refunds the action spent on it when you resume your turn.</p>
 
-<blockquote>Is this description clear? It may need refining.</blockquote>
+<h3>Wait</h3>
+<h4>Action</h4>
+<p></p>
 
 <h1>Reactions</h1>
 <p></p>
 
-<h1>Momentum</h1>
-<p>When you hit an attack, you gain a stack of momentum.</p>
-<p>Each stack of momentum grants you a +2 bonus to any combat related rolls.</p>
-<p>You can normally have up to 3 stacks of momentum.</p>
-<p>If you miss an attack or get hit by an attack, you lose all stacks of momentum.</p>
+<h3>Dodge</h3>
+<p>When you are the target of a Strike or Shot, you may attempt to Dodge the attack.</p>
+<p></p>
 
-<h1>Flanking</h1>
-<p>If there is only one enemy adjacent to you, you are marking that enemy.</p>
-<p>If a marked enemy "allows Opportunity Attacks" from you, you may make an Opportunity Attack against them.</p>
+<h3>Parry</h3>
+<p>When you are the target of a Strike, you may attempt to Parry the attack.</p>
+<p></p>
 
-<h1>Opportunity Attacks</h1>
-<p>An Opportunity Attack, also known as an attack of opportunity, is for most purposes a free Strike that may be made under a few circumstances.</p>
-
-<blockquote>Considering adding a penalty to opportunity attacks made after the first in a round. Perhaps even all opportunity attacks.</blockquote>
+<h3>Punish</h3>
+<p>When an adjacent enemy performs a Punishable action, you may Punish them.</p>
+<p>Make a Strike against the target.</p>
 
 <h1>Damage</h1>
-<p>A hit will always deal at least 1 nonlethal damage, even if it is reduced to 0 or below by Armor or such.</p>
-<p>If the attacker has 3 or more stacks of momentum after hitting, it also inflicts a minor wound.</p>
-<p>If a hit reduces the target to 0 hit points, or they were already at 0 hit points, it inflicts a major wound. If the hit would already inflict a wound, it inflicts a fatal wound.</p>
-<p>A hit can only inflict a single wound.</p>
+<h2>Wounds</h2>
+<p>If a hit inflicts damage, it may also inflict a wound. A hit can only inflict a single wound, and will inflict the most severe type of wound it is able to.</p>
+<p>Below is a list of conditions that cause a hit to inflict a wound.</p>
+<table>
+    <tr><th>Condition</th><th>Wound</th></tr>
+    <tr><td>Damage equal to or larger than the target's Constitution.</td><td>Minor</td></tr>
+    <tr><td>Damage equal to or larger than the target's current hit points.</td><td>Major</td></tr>
+    <tr><td>Damage equal to or larger than the target's current hit points plus the target's Constitution.</td><td>Fatal</td></tr>
+</table>
+<p>Minor wounds will never incur permanent penalties.</p>
+<p>Major wounds may incur permanent penalties if not treated well, and may be fatal if treated poorly or not at all.</p>
+<p>Fatal wounds are very often fatal, and will in most cases incur permanent penalties should death not occur.</p>
+<p>Tables can be found <a href="wounds.html">here</a>.</p>
 
 <h2>Nonlethal</h2>
-<p>Can never inflict fatal wounds and always uses the unarmed wounds table.</p>
-
-<h1>Wounds</h1>
-<p>Minor wounds will never incur permanent penalties.</p>
-<p>Major wounds may incur permanent penalties, and have a low chance of being fatal if not treated.</p>
-<p>Fatal wounds are almost always, as the name suggests, fatal.</p>
-<p>Tables can be found <a href="wounds.html">here</a>.</p>
+<p>Nonlethal damage can never inflict fatal wounds and always uses the unarmed wounds table.</p>
 
 <h1>Conditions</h1>
 <p></p>
@@ -114,8 +106,8 @@ title: Combat
 
 <h2>Prone</h2>
 <p>Movement limited to one pace.</p>
-<p>Disadvantage on Agility tests.</p>
+<p>Disadvantage on Dexterity tests.</p>
 <p>Disadvantage on Strikes and Shots, unless the weapon has the 'prone' tag.</p>
 <p>Strikes against prone targets have advantage.</p>
 <p>Shots against prone targets have disadvantage.</p>
-<p>May use an action to stand up, allowing Opportunity Attacks.</p>
+<p>May use an action to stand up, moving up to one pace and allowing Opportunity Attacks.</p>
