@@ -11,16 +11,24 @@
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
+    width: 240px;
+    background-color: #d3ccc1;
+    /* color: #fff; */
+    /* text-align: center; */
+    padding: 5px;
+    /* border-radius: 6px; */
+    border-style: solid;
+    border-width: 2px;
     position: absolute;
     z-index: 1;
+    top: 24px;
+    left: 0px;
 }
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+.statblock td {
+    font-size: 32px;
 }

@@ -2,10 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\areas",
+    "\\assets",
+    "\\assets\\css",
     "\\careers",
     "\\races",
-    "\\world"
+    "\\world",
+    "\\world\\monsters"
   ],
-  "SelectedNode": "\\careers\\laborer.html",
+  "SelectedNode": "\\assets\\css\\style.scss",
   "PreviewInSolutionExplorer": false
 }
