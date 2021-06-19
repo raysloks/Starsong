@@ -5,7 +5,6 @@
 
 .tooltip {
     position: relative;
-    display: inline-block;
     border-bottom: 1px dotted black;
 }
 
@@ -21,7 +20,7 @@
     border-width: 2px;
     position: absolute;
     z-index: 1;
-    top: 24px;
+    top: 19px;
     left: 0px;
 }
 
@@ -31,4 +30,5 @@
 
 .statblock td {
     font-size: 32px;
+    margin-bottom: 7px;
 }
