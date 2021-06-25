@@ -1,14 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\areas",
     "\\assets",
     "\\assets\\css",
     "\\careers",
     "\\races",
     "\\world",
-    "\\world\\monsters"
+    "\\world\\creatures",
+    "\\world\\dungeons",
+    "\\world\\spells",
+    "\\_includes"
   ],
-  "SelectedNode": "\\assets\\css\\style.scss",
+  "SelectedNode": "\\careers\\mystic.html",
   "PreviewInSolutionExplorer": false
 }
