@@ -1,1 +1,5 @@
+remote_theme: raysloks/merlot
+plugins:
+    - jekyll-remote-theme
 collections:
+    - careers
