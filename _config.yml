@@ -1,3 +1,4 @@
 remote_theme: raysloks/merlot
 collections:
-    - careers
+    careers:
+        output: true

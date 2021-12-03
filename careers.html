@@ -1,0 +1,18 @@
+---
+title: careers
+layout: default
+---
+
+Machinist
+Runebound (runebinder? reliquarian? relic hunter?)
+Templar
+Mercenary
+Occultist
+
+Temple Knight
+
+<ul>
+    {% for career in site.careers %}
+        <li><a href="{{ career.url }}">{{ career.name }}</a></li>
+    {% endfor %}
+</ul>
