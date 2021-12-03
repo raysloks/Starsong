@@ -1,4 +1,5 @@
 remote_theme: raysloks/merlot
+baseurl: /Grimsund
 collections:
     careers:
         output: true
