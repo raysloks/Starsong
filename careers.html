@@ -13,6 +13,6 @@ Temple Knight
 
 <ul>
     {% for career in site.careers %}
-        <li><a href="{{ career.url }}">{{ career.title }}</a></li>
+        <li><a href="{{ site.baseurl }}{{ career.url }}">{{ career.title }}</a></li>
     {% endfor %}
 </ul>
