@@ -1,5 +1,11 @@
+plugins:
+    - jekyll-remote-theme
+exclude:
+    - .vs
 remote_theme: raysloks/merlot
 baseurl: /Grimsund
 collections:
     careers:
+        output: true
+    perks:
         output: true

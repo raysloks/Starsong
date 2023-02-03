@@ -1,0 +1,10 @@
+{% assign general_perks = site.perks | where:"general", "true" %}
+{% assign perks_by_level = site.perks | where_exp:"perk", "include.perks contains perk.guid" | concat: general_perks | group_by: 'level' | sort: 'name' %}
+{% for level in perks_by_level %}
+	<h2>Level {{ level.name }}</h2>
+	{% assign perks = level.items | sort: 'order' %}
+	{% for perk in perks %}
+		<h3><a href="{{ perk.url }}">{{ perk.title }}</a></h3>
+		{{ perk.content }}
+	{% endfor %}
+{% endfor %}

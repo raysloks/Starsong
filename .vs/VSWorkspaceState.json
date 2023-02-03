@@ -3,14 +3,15 @@
     "",
     "\\assets",
     "\\assets\\css",
-    "\\careers",
-    "\\races",
     "\\world",
     "\\world\\creatures",
     "\\world\\dungeons",
     "\\world\\spells",
-    "\\_includes"
+    "\\_careers",
+    "\\_careers\\failed",
+    "\\_includes",
+    "\\_perks"
   ],
-  "SelectedNode": "\\careers\\mystic.html",
+  "SelectedNode": "\\_perks\\identifier_actuator.html",
   "PreviewInSolutionExplorer": false
 }

@@ -9,16 +9,19 @@ title: Combat
 <p>Roll your weapon's damage dice. The result is capped to your Strength. Deal the final result as damage to your target.</p>
 
 <h2>Shot</h2>
-<p>Roll your weapon's damage dice, exploding. The result is capped to the weapon's damage limit. Deal the final result as damage to your target.</p>
-<p>If a Shot has advantage, you may reroll each damage die once. If a Shot has disadvantage, the damage dice do not explode.</p>
+<p>Roll your weapon's damage dice. The result is capped to the weapon's damage limit. Deal the final result as damage to your target.</p>
 
 <h2>Movement</h2>
 <p>Most movement in combat occurs through the actions Charge, Stride, and Dash.</p>
 
+<h2>Marking</h2>
+<p></p>
+
+<h2>Actions</h2>
+<p></p>
+
 <h1>Turns</h1>
-<p>At the start of a time-critical encounter, every player rolls a d20 to use as their Initiative. This value may be modified by various abilities, but it is always a value between 1 and 20.</p>
-<p>Regardless, record the result as your Initiative. You could do this via sticky notes or some sort of dry-erase stuff.</p>
-<p>The players begin taking turns, starting at the highest Initiative.</p>
+<p></p>
 
 <blockquote>TODO when you start dying or something, move Initiative to right before whosever turn it is right now. This way your allies get a whole round to save you. Grabbed from Pathfinder 2e.</blockquote>
 
@@ -29,39 +32,46 @@ title: Combat
 <h3>Melee Attack</h3>
 <h4>Action</h4>
 <p>Make a Strike against an adjacent target.</p>
+<p>You may move a number of paces before and after striking, totalling less than or equal to your Speed.</p>
+<p>However, the Strike gains a <strong>damage penalty</strong> equal to the number of paces moved. This penalty is applied <strong>before the damage is capped</strong>.</p>
+<p>Punishable by unmarked targets you move away from.</p>
 
 <h3>Ranged Attack</h3>
 <h4>Action</h4>
-<p>Allows Opportunity Attacks.</p>
 <p>Make a Shot against a target in range.</p>
+<p>You may move a number of paces before and after shooting, totalling less than or equal to your Speed.</p>
+<p>However, the Shot gains a <strong>damage penalty</strong> equal to the number of paces moved. This penalty is applied <strong>before the damage is capped</strong>.</p>
+<p>Punishable by unmarked targets you move away from.</p>
+<p>Note that you do not automatically mark adjacent enemies while using a ranged weapon.</p>
 
 <h3>Stride</h3>
 <h4>Action</h4>
 <p>Move a number of paces equal to or less than your Speed.</p>
+<p>Punishable by unmarked targets you move away from.</p>
 
 <h3>Dash</h3>
 <h4>Action</h4>
-<p>Move a number of paces equal to or less than your Speed plus 1d6.</p>
-<p>Allows Opportunity Attacks from anyone you move away from or pass on the way.</p>
+<p>Gain a point of Exhaustion.</p>
+<p>Move a number of paces equal to or less than three times your Speed plus 1d6.</p>
+<p>You cannot mark targets whilst dashing.</p>
+<p>Punishable by any targets.</p>
 
 <h3>Charge</h3>
 <h4>Action</h4>
-<p>Move up to 5 paces towards a target and make a Strike against it.</p>
-<p>Allows Opportunity Attacks from anyone you move away from or pass on the way.</p>
+<p>Move a number of paces equal to or less than your Speed in a straight line towards a target and make a Strike against it.</p>
+<p>You must move at least 5 paces.</p>
 
 <h3>Recover</h3>
 <h4>Action</h4>
-<p>Regain a number of hit points equal to your Constitution, and reduce your maximum hit points by 1.</p>
-<p>Lost maximum hit points can be recovered by resting.</p>
+<p>Regain 1d6 hit points.</p>
 
 <h3>Hold</h3>
 <h4>Action</h4>
-<p>Put your turn on hold. After any other creature's action you may interject, using your reaction to perform an action.</p>
-<p>Holding your turn does not change your Initiative.</p>
+<p>Gain one Action Point.</p>
 
 <h3>Wait</h3>
 <h4>Action</h4>
-<p></p>
+<p>Do nothing.</p>
 
 <h1>Reactions</h1>
 <p></p>
@@ -88,9 +98,9 @@ title: Combat
     <tr><td>Damage equal to or larger than the target's current hit points.</td><td>Major</td></tr>
     <tr><td>Damage equal to or larger than twice the target's current hit points.</td><td>Fatal</td></tr>
 </table>
-<p>Minor wounds will never incur permanent penalties.</p>
-<p>Major wounds may incur permanent penalties if not treated well, and may be fatal if treated poorly or not at all.</p>
-<p>Fatal wounds are very often fatal, and will in most cases incur permanent penalties should death not occur.</p>
+<p>Minor wounds will never incur permanent penalties nor cause death.</p>
+<p>Major wounds may incur permanent penalties if not treated well, and may cause death if treated poorly or not at all.</p>
+<p>Fatal wounds will always incur permanent penalties, and will almost always cause death.</p>
 <p>Tables can be found <a href="wounds.html">here</a>.</p>
 
 <h2>Nonlethal</h2>

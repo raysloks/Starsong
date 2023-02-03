@@ -8,14 +8,20 @@ layout: default
 <ul>
     <li>Keep combat somewhat fast and smooth.</li>
     <li>Keep total hit points somewhat low.</li>
-    <li>Loss of hit points should be felt, but there should be no need to whittle down the players resources with multiple encounters to provide challenge.</li>
+    <li>Loss of hit points should be impactful.</li>
+    <li>Characters should not be able to receive permanent penalties or die without first reaching 0 hit points.</li>
+    <li>Combat should not inherently be encouraged.</li>
+    <li>There should be no need to whittle down the players' resources with multiple encounters to provide challenge.</li>
+    <li>Different archetypes should be affected by encounter frequency in roughly the same way.</li>
+    <li>There should be a decent amount of character customization.</li>
+    <li>Perks should avoid allowing a character to do something they otherwise couldn't do; they should aim at making them better at doing something.</li>
 </ul>
 
 <h2></h2>
 <p></p>
 
 <h1>Character Stats</h1>
-<p>While a character is so much more than just stats, they provide a good baseline.</p>
+<p>While a character is so much more than just stats, they provide a good foundation.</p>
 <p>For creating a character, see <a href="character_creation.html">here</a>.</p>
 
 <h2>Primary</h2>
@@ -23,41 +29,28 @@ layout: default
 
 <h4>Strength</h4>
 <p>The maximum damage you can deal with a single melee attack.</p>
+<p>How much Bulk you can carry.</p>
 
 <h4>Agility</h4>
 <p>How many paces you can move in a single turn.</p>
 <p>How much damage you reduce with the Dodge reaction.</p>
 
-<h4>Intelligence</h4>
-<p>Logic, reasoning, and remembering random facts.</p>
-
-<h4>Constitution</h4>
-<p>Increases you maximum hit points.</p>
-
-<h4>Dexterity</h4>
-<p>Parrying.</p>
-<p>Precise fingerwork.</p>
-
-<h4>Wisdom</h4>
-<p>Instincts, common sense, and willpower.</p>
-
-<h4>Charisma</h4>
-<p>Social skills, controlling how others see you.</p>
+<h4>Psyche</h4>
+<p></p>
 
 <h2>Secondary</h2>
 <p>These stats are derived from your primary stats, your perks, and your equipment.</p>
 
 <h4>Hit Points</h4>
-<p>Your base hit point total is equal to:</p>
-<p>Constitution + Level</p>
+<p>How much damage you can take before you're in danger of being injured.</p>
 
 <h4>Armor</h4>
-<p>Every point of Armor reduces the raw damage you take by 1.</p>
+<p>Every point of Armor reduces most damage you take by 1.</p>
 
 <h1>Skills</h1>
 <p>When you allocate a skill point, you must first roll a d6. You can then add the point to any skill in which your current rank is lower than the result.</p>
-<p>If you have enough ranks in a skill, you may make relevant tests without your roll being unlucky.</p>
-<p>Additionally, each rank grants a +1 bonus to relevant tests.</p>
+<p>If you have enough ranks in a skill, you may make relevant tests without being {% include unlucky.html %}.</p>
+<p>Additionally, each rank grants a +4 bonus to relevant tests.</p>
 
 <h1>Gameplay</h1>
 <p></p>
@@ -68,14 +61,20 @@ layout: default
 <p>Roll a d20 and add any relevant modifiers.</p>
 <p>A test may use a stat; a skill; both; or neither as modifiers.</p>
 <p>If the result is larger than or equal to the test's Difficulty Class, you succeed at the test.</p>
-<p>A test should in most cases have a DC of at least 15.</p>
 <p>Tests are sometimes referred to as checks or saves.</p>
+<table>
+    <tr><th>DC</th><th>Difficuly</th></tr>
+    <tr><td>10</td><td>Very Easy</td></tr>
+    <tr><td>15</td><td>Easy</td></tr>
+    <tr><td>20</td><td>Average</td></tr>
+    <tr><td>25</td><td>Hard</td></tr>
+    <tr><td>30</td><td>Very Hard</td></tr>
+</table>
 
 <h3>Contests</h3>
 <p>Roll a d20 and add any relevant modifiers.</p>
 <p>Your opponent does the same.</p>
 <p>Whoever has the largest result wins.</p>
-<p>If both results are the same, nothing happens most of the time.</p>
 
 <h3>Lucky and Unlucky</h3>
 <p></p>
@@ -83,11 +82,14 @@ layout: default
 <h2>Phases</h2>
 <p></p>
 
+<h3><a href="combat.html">Combat</a></h3>
+<p>When time is of the essence.</p>
+
 <h3><a href="exploration.html">Exploration</a></h3>
 <p>The primary mode of play.</p>
 
-<h3><a href="combat.html">Combat</a></h3>
-<p>The most time-critical part of play.</p>
+<h3><a href="travel.html">Travel</a></h3>
+<p>.</p>
 
 <h3><a href="downtime.html">Downtime</a></h3>
 <p>Playing outside of a session.</p>
@@ -95,18 +97,17 @@ layout: default
 <h1>Advancement</h1>
 
 <h2>Experience</h2>
-<p>You can spend 10 xp to level up.</p>
-<table>
-    <tr><th>Accomplishment</th><th>Experience</th></tr>
-    <tr><td>Longer social encounter</td><td>1 xp</td></tr>
-    <tr><td>Visiting a new location (village, town, dungeon, etc)</td><td>1 xp</td></tr>
-    <tr><td>Surviving a low risk combat encounter</td><td>1 xp</td></tr>
-    <tr><td>Surviving a moderate risk combat encounter</td><td>5 xp</td></tr>
-    <tr><td>Surviving a high risk combat encounter</td><td>7 xp</td></tr>
-    <tr><td>Surviving an extreme risk combat encounter</td><td>9 xp</td></tr>
-    <tr><td>Completing a challenging contract</td><td>5 xp</td></tr>
-    <tr><td>Completing an epic quest</td><td>10 xp</td></tr>
-</table>
+<p></p>
+<ul>
+    <li>Encounter a monster.</li>
+    <li>Retrieve 1g worth of treasure.</li>
+    <li>Retrieve a single item worth at least 50s.</li>
+</ul>
+<ul>
+    <li>Defeat a monster.</li>
+    <li>Retrieve 2g worth of treasure.</li>
+    <li>Retrieve a single item worth at least 1g.</li>
+</ul>
 
 <h3>Examples</h3>
 <p></p>
@@ -117,13 +118,11 @@ layout: default
 <h2>Leveling Up</h2>
 <p>When leveling up, you perform the following:</p>
 <ul>
-    <li>Increase your base hit points by 1 (included in the base hit points calculation above).</li>
-    <li>Gain one skill rank.</li>
-    <li>Attempt to improve one primary stat.</li>
-    <li>Advance a career or start a new career.</li>
+    <li>Increase your base hit points by 1d6.</li>
+    <li>Attempt to improve your primary stats.</li>
 </ul>
 
-<h3>Careers</h3>
+<h3><a href="careers.html">Careers</a></h3>
 <p></p>
 
 <h3>Skill Ranks</h3>
@@ -131,7 +130,9 @@ layout: default
 <p>Note that you will always be able to improve one skill.</p>
 
 <h3>Primary Stats</h3>
-<p>Select one primary stat you would like to attempt to improve. Roll a d20. If the result is higher than your current stat, you may increase the stat by 1.</p>
-<p>Note that you must select which stat you are attempting to improve before rolling the die.</p>
+<p>Roll a d20 for each of your primary stats. If the result is higher than your current stat, you increase the stat by 1.</p>
+
+<h2>Feats</h2>
+<p></p>
 
 <h1><a href="character_creation.html">Character Creation</a></h1>
