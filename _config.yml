@@ -3,7 +3,7 @@ plugins:
 exclude:
     - .vs
 remote_theme: raysloks/merlot
-baseurl: /Grimsund
+baseurl: /Starsong
 collections:
     careers:
         output: true
