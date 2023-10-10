@@ -2,134 +2,46 @@
 layout: default
 ---
 <h1>Perks</h1>
-<p>Below are all the perks a 1st level character can take.</p>
-
+<p>Below are some perks a character can take.</p>
 
 <h2>General</h2>
 <p>These perks will come in handy in all sorts of situations.</p>
 
-<h3>Well Traveled</h3>
-<p>Count as having an extra rank in all Local Knowledge tests, even those you have no ranks in.</p>
-
-<h3>Second Wind</h3>
-<p>Once per short rest, you may recover 2 levels of exhaustion.</p>
-
-<h3>Fleet</h3>
-<p>When using a movement action you may move an additional pace.</p>
-
-<h3>Sprinter</h3>
-<p>When using the Sprint action, you may move an additional 3 paces.</p>
-
-<h3>Disappearing Act</h3>
-<p>When trying to escape someone or something following you, you make relevant non-combat tests with advantage.</p>
-
-<h3>Disease Resistant</h3>
-<p>Make saves against diseases with advantage.</p>
-
-<h3>Old Man and the Sea</h3>
-<p>Make Resolve tests with advantage.</p>
-
-<h3>Improvisation</h3>
-<p>Reroll any die result of 1-5 when making an untrained skill test.</p>
-
-<h3>I Had Me Fooled</h3>
-<p>You may make a Deception (Charisma) test to make yourself believe a fact.</p>
-<p>The DC of the test is 15 + Intelligence. The referee may raise the DC if believing the fact would be improbable.</p>
-<p>You may not attempt multiple tests for the same fact.</p>
-<p>If you are provided proof that the fact is false you must make another test to keep believing.</p>
-
-<h3>Cold Resistant</h3>
-<p>Make saves against cold weather effects with advantage.</p>
-<p>Reduce cold damage taken by 1.</p>
-
-<h3>Heat Resistant</h3>
-<p>Make saves against hot weather effects with advantage.</p>
-<p>Reduce fire damage taken by 1.</p>
-
-<h3>Literate</h3>
-<p>Select one of the following scripts:</p>
-<table>
-    <tr><td>Script</td><th>Description</th><th>Languages</th></tr>
-    <tr><td>Imperial</td><td>Official script of the empire.</td><td>Mostly Imperial, but its use </td></tr>
-    <tr><td>Runic</td><td>By necessity an angular script. Used in Grimsund and the near kingdoms, but </td><td></td></tr>
-    <tr><td>Stitches</td><td>Embroidered script of the wanderers.</td><td></td></tr>
-</table>
-<p>You can read and write that script.</p>
-<p>This does not mean you always know the language that is written.</p>
-
+{% assign general_perks = site.perks | where:"type", "general" %}
+{% assign perks_by_level = site.perks | where_exp:"perk", general_perks | group_by: 'level' | sort: 'name' %}
+{% for level in perks_by_level %}
+	<h3>Level {{ level.name }}</h3>
+	{% assign perks = level.items | sort: 'order' %}
+	{% for perk in perks %}
+		<h4><a href="{{ perk.url }}">{{ perk.title }}</a></h4>
+		{{ perk.content }}
+	{% endfor %}
+{% endfor %}
 
 <h2>Combat</h2>
 <p>These perks will aid you in combat, but will find little use outside of it.</p>
 
-<h3>Intercept</h3>
-<h4>Reaction</h4>
-<p>You move to intercept an attack using the Sprint action. If you manage to move in front of the target or adjacent to the attacker, you become the target of the attack.</p>
+{% assign combat_perks = site.perks | where:"type", "combat" %}
+{% assign perks_by_level = site.perks | where_exp:"perk", combat_perks | group_by: 'level' | sort: 'name' %}
+{% for level in perks_by_level %}
+	<h3>Level {{ level.name }}</h3>
+	{% assign perks = level.items | sort: 'order' %}
+	{% for perk in perks %}
+		<h4><a href="{{ perk.url }}">{{ perk.title }}</a></h4>
+		{{ perk.content }}
+	{% endfor %}
+{% endfor %}    
 
-<h3>A Moment's Respite</h3>
-<p>You may take the Recover action as a free action by spending one stack of momentum.</p>
+<h2>Hybrid</h2>
+<p></p>
 
-<h3>Press the Attack</h3>
-<p>Whenever you gain a 3rd stack of momentum, you may instantly make a Strike.</p>
-
-<h3>Turn the Tide</h3>
-<p>Whenever an enemy adjactent to you gains a 3rd stack of momentum, you may instantly make a Strike against them.</p>
-<p>This strike ignores any bonuses and penalties granted by momentum.</p>
-
-<h3>Might Makes Right</h3>
-<p>Strikes deal 1 extra damage.</p>
-
-<h3>Cleave</h3>
-<p>When you hit a target with a Strike made by a Melee Attack; Charge; or other attack action, you may instantly make a Strike against a target that is adjacent to both you and the target of the triggering Strike.</p>
-
-<h3>Brawler</h3>
-<p>Gain a +2 bonus to Melee when unarmed.</p>
-<p>Gain a +2 bonus to Melee while grappling or being grappled.</p>
-<p>Gain a +2 bonus to all combat manoeuvers.</p>
-
-<h3>Sharpshooter</h3>
-<p>When making a Shot, the penalty due to range is halved.</p>
-
-<h3>Riposte</h3>
-<p>Once per turn, when an enemy misses a Strike against you, you may make an Opportunity Attack against them.</p>
-<p>Opportunity Attacks do not trigger Riposte.</p>
-
-<h3>Strike When the Time is Right</h3>
-<p>When holding your turn, you may resume it after making an Opportunity Attack.</p>
-<p>This effectively puts the turn of whose ever turn it was on hold until you have ended your turn.</p>
-
-<h3>Point Blank Shot</h3>
-<p>Ranged Attack does not allow an Opportunity Attack from the target.</p>
-
-<h3>Bloodlust</h3>
-<p>Hitting a Strike restores 1 hit point.</p>
-<p>Inflicting a wound restores additional hit points: 1 for a minor wound; 2 for a major wound; and 4 for a fatal wound.</p>
-
-<h3>Decimate</h3>
-<p>Your attacks deal 1 additional damage per 10 total hit points the target has.</p>
-
-<h3>Warforged</h3>
-<p>Increase the Armor gained from armor by 50%, rounded down.</p>
-
-<h3>Iron Man</h3>
-<p>If the damage you take is reduced to 0 or below, you suffer no damage instead of the usual 1.</p>
-
-<h3>True Survivor</h3>
-<p>At the start of your turn, if you have less than 5 hit points remaining, you regain 1 hit point.</p>
-
-<h3>Rapid Fire</h3>
-<h4>Action</h4>
-<p>Make two Shots against a target in range. Both shots are made with disadvantage.</p>
-<p>Allows Opportunity Attacks.</p>
-
-<blockquote>The expected damage output is larger than a Ranged Attack when the chance to hit is larger than 50%.</blockquote>
-
-<h3>Go! Go! Go!</h3>
-<h4>Action</h4>
-<p>Grant an adjacent ally 2d6 Initiative.</p>
-
-<h3>Tenacious</h3>
-<p>Every stun effect you suffer can be mitigated by a Constitution save at the end of your turn, even if you normally would not be allowed one.</p>
-<p>If the effect does not have a DC associated with it, the save's DC is 20.</p>
-
-<h3>Massacre</h3>
-<p>Delivering a fatal wound to a non-helpless target allows you to immediately take an action.</p>
+{% assign hybrid_perks = site.perks | where:"type", "hybrid" %}
+{% assign perks_by_level = site.perks | where_exp:"perk", hybrid_perks | group_by: 'level' | sort: 'name' %}
+{% for level in perks_by_level %}
+	<h3>Level {{ level.name }}</h3>
+	{% assign perks = level.items | sort: 'order' %}
+	{% for perk in perks %}
+		<h4><a href="{{ perk.url }}">{{ perk.title }}</a></h4>
+		{{ perk.content }}
+	{% endfor %}
+{% endfor %}

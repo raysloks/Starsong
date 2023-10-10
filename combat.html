@@ -33,14 +33,14 @@ title: Combat
 <h4>Action</h4>
 <p>Make a Strike against an adjacent target.</p>
 <p>You may move a number of paces before and after striking, totalling less than or equal to your Speed.</p>
-<p>However, the Strike gains a <strong>damage penalty</strong> equal to the number of paces moved. This penalty is applied <strong>before the damage is capped</strong>.</p>
+<p>However, the Strike gains a <strong>damage penalty</strong> equal to the number of paces moved. This penalty is applied <strong>before</strong> the damage is capped.</p>
 <p>Punishable by unmarked targets you move away from.</p>
 
 <h3>Ranged Attack</h3>
 <h4>Action</h4>
 <p>Make a Shot against a target in range.</p>
 <p>You may move a number of paces before and after shooting, totalling less than or equal to your Speed.</p>
-<p>However, the Shot gains a <strong>damage penalty</strong> equal to the number of paces moved. This penalty is applied <strong>before the damage is capped</strong>.</p>
+<p>However, the Shot gains a <strong>damage penalty</strong> equal to the number of paces moved. This penalty is applied <strong>before</strong> the damage is capped.</p>
 <p>Punishable by unmarked targets you move away from.</p>
 <p>Note that you do not automatically mark adjacent enemies while using a ranged weapon.</p>
 
@@ -51,7 +51,6 @@ title: Combat
 
 <h3>Dash</h3>
 <h4>Action</h4>
-<p>Gain a point of Exhaustion.</p>
 <p>Move a number of paces equal to or less than three times your Speed plus 1d6.</p>
 <p>You cannot mark targets whilst dashing.</p>
 <p>Punishable by any targets.</p>
@@ -59,15 +58,17 @@ title: Combat
 <h3>Charge</h3>
 <h4>Action</h4>
 <p>Move a number of paces equal to or less than your Speed in a straight line towards a target and make a Strike against it.</p>
-<p>You must move at least 5 paces.</p>
-
-<h3>Recover</h3>
-<h4>Action</h4>
-<p>Regain 1d6 hit points.</p>
+<p>You must move at least 4 paces.</p>
 
 <h3>Hold</h3>
 <h4>Action</h4>
-<p>Gain one Action Point.</p>
+<p>Select a combatant that has not yet taken their turn this round.</p>
+<p>Your turn is put on hold until after they end their turn.</p>
+
+<h3>Quaff</h3>
+<h4>Action</h4>
+<p>Drink a potion.</p>
+<p>Punishable by any targets.</p>
 
 <h3>Wait</h3>
 <h4>Action</h4>
@@ -76,15 +77,12 @@ title: Combat
 <h1>Reactions</h1>
 <p></p>
 
-<h3>Dodge</h3>
-<p>When you are the target of a Strike or Shot, you may attempt to Dodge the attack.</p>
-<p></p>
-
-<h3>Parry</h3>
-<p>When you are the target of a Strike, you may attempt to Parry the attack.</p>
-<p></p>
+<h3>React</h3>
+<h4>Reaction</h4>
+<p>Make an Agility-save.</p>
 
 <h3>Punish</h3>
+<h4>Free Reaction</h4>
 <p>When an adjacent enemy performs a Punishable action, you may Punish them.</p>
 <p>Make a Strike against the target.</p>
 
@@ -115,8 +113,7 @@ title: Combat
 
 <h2>Prone</h2>
 <p>Movement limited to one pace.</p>
-<p>Disadvantage on Dexterity tests.</p>
-<p>Disadvantage on Strikes and Shots, unless the weapon has the 'prone' tag.</p>
-<p>Strikes against prone targets have advantage.</p>
-<p>Shots against prone targets have disadvantage.</p>
-<p>May use an action to stand up, moving up to one pace and allowing Opportunity Attacks.</p>
+<p>Agility-saves are {% include unlucky.html %}.</p>
+<p>Strikes and Shots are impaired, unless the weapon has the 'prone' tag.</p>
+<p>Strikes against prone targets are enhanced.</p>
+<p>Shots against prone targets are impaired, unless there is a large height advantage.</p>
