@@ -6,28 +6,3 @@ layout: default
 
 <h2>General</h2>
 <p>These perks will come in handy in all sorts of situations.</p>
-
-{% assign general_perks = site.perks | where:"type", "general" %}
-{% assign perks_by_level = site.perks | where_exp:"perk", general_perks | group_by: 'level' | sort: 'name' %}
-{% for level in perks_by_level %}
-	<h3>Level {{ level.name }}</h3>
-	{% assign perks = level.items | sort: 'order' %}
-	{% for perk in perks %}
-		<h4><a href="{{ perk.url }}">{{ perk.title }}</a></h4>
-		{{ perk.content }}
-	{% endfor %}
-{% endfor %}
-
-<h2>Combat</h2>
-<p>These perks will aid you in combat, but will find little use outside of it.</p>
-
-{% assign combat_perks = site.perks | where:"type", "combat" %}
-{% assign perks_by_level = site.perks | where_exp:"perk", combat_perks | group_by: 'level' | sort: 'name' %}
-{% for level in perks_by_level %}
-	<h3>Level {{ level.name }}</h3>
-	{% assign perks = level.items | sort: 'order' %}
-	{% for perk in perks %}
-		<h4><a href="{{ perk.url }}">{{ perk.title }}</a></h4>
-		{{ perk.content }}
-	{% endfor %}
-{% endfor %}
