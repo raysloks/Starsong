@@ -30,18 +30,4 @@ layout: default
 		<h4><a href="{{ perk.url }}">{{ perk.title }}</a></h4>
 		{{ perk.content }}
 	{% endfor %}
-{% endfor %}    
-
-<h2>Hybrid</h2>
-<p></p>
-
-{% assign hybrid_perks = site.perks | where:"type", "hybrid" %}
-{% assign perks_by_level = site.perks | where_exp:"perk", hybrid_perks | group_by: 'level' | sort: 'name' %}
-{% for level in perks_by_level %}
-	<h3>Level {{ level.name }}</h3>
-	{% assign perks = level.items | sort: 'order' %}
-	{% for perk in perks %}
-		<h4><a href="{{ perk.url }}">{{ perk.title }}</a></h4>
-		{{ perk.content }}
-	{% endfor %}
 {% endfor %}
