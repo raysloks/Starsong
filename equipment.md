@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<h1>Armor</h1>
+# Armor
 <table>
     <tr><th>Name</th><th>Hit Points</th><th>Armor</th><th>Encumbrance</th><th>Cost</th></tr>
     <tr><td>Thick Tunic</td><td>+1</td><td>0</td><td>0</td><td>5 c</td></tr>
@@ -17,7 +17,7 @@ layout: default
     <tr><td>Great Helm</td><td>+2</td><td>+2</td><td>-1</td><td>150 c</td></tr>
 </table>
 
-<h1>Shields</h1>
+# Shields
 <table>
     <tr><th>Name</th><th>Melee Defense</th><th>Ranged Defense</th><th>Cost</th></tr>
     <tr><td>Buckler</td><td>+2</td><td>+1</td><td>10 c</td></tr>
@@ -26,7 +26,7 @@ layout: default
     <tr><td>Heater Shield</td><td>+4</td><td>+3</td><td>50 c</td></tr>
 </table>
 
-<h1>Weapons</h1>
+# Weapons
 <table>
     <tr><th>Name</th><th>Damage</th><th>Tags</th><th>Cost</th></tr>
     <tr><td>Knife</td><td>1d4</td><td>belt</td><td>10 c</td></tr>
@@ -47,30 +47,42 @@ layout: default
     <tr><td>Light Crossbow</td><td>1d8</td><td>ride, prone</td><td>2-15-100</td><td>300 c</td></tr>
     <tr><td>Heavy Crossbow</td><td>1d12</td><td>prone</td><td>4-25-200</td><td>800 c</td></tr>
 </table>
-<h2>Types</h2>
 
-<h2>Tags</h2>
-<h3>Armor Penetration</h3>
-<p>Ignores armor equal to difference between damage roll and armor.</p>
-<h3>Brace</h3>
-<p>If an enemy charges you, you may make an Opportunity Attack against them before they strike you.</p>
-<h3>Cleave</h3>
-<p>When using this weapon, you count as having the perk <a href="perks.html#Cleave">Cleave</a>.</p>
-<p>If you already have it, the bonus Strikes can also trigger Cleave. Note that you cannot hit the same target more than once for each original triggering Strike.</p>
-<h3>Two Handed</h3>
-<p>You need two hands to use this weapon effectively.</p>
-<p>This does not mean both hands are constantly gripping the weapon, but you need both to fully utilize the weapon for offense and defense.</p>
-<h3>Versatile</h3>
-<p></p>
+## Types
 
-<h1>Supplies</h1>
-<h2>Basic Supplies</h2>
+## Weld-A-Weapon
+<table>
+    <tr><th>Dice</th><th>Points</th></tr>
+    <tr><td>1d4</td><td>5</td></tr>
+    <tr><td>1d6</td><td>7</td></tr>
+    <tr><td>1d8</td><td>9</td></tr>
+    <tr><td>1d10</td><td>11</td></tr>
+    <tr><td>1d12</td><td>13</td></tr>
+</table>
+
+## Tags
+### Armor Penetration
+Ignores armor equal to difference between damage roll and armor.
+### Brace
+If an enemy charges you, you may make an Opportunity Attack against them before they strike you.
+### Cleave
+When using this weapon, you count as having the perk <a href="perks.html#Cleave">Cleave</a>.
+If you already have it, the bonus Strikes can also trigger Cleave. Note that you cannot hit the same target more than once for each original triggering Strike.
+### Two Handed
+You need two hands to use this weapon effectively.
+This does not mean both hands are constantly gripping the weapon, but you need both to fully utilize the weapon for offense and defense.
+### Versatile
+
+
+# Supplies
+## Basic Supplies
 <table>
     <tr><th>Name</th><th>Slots</th><th>Cost</th></tr>
     <tr><td>Rations</td><td>&frac14;</td><td>1 c</td></tr>
     <tr><td>Torch</td><td>1</td><td>1 c</td></tr>
 </table>
-<h2>Advanced Supplies</h2>
+
+## Advanced Supplies
 <table>
     <tr><th>Name</th><th>Slots</th><th>Cost</th></tr>
     <tr><td>Medical Supplies</td><td>&frac14;</td><td>3 c</td></tr>

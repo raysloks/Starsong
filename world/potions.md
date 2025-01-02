@@ -1,4 +1,5 @@
 ---
+title: Potions
 layout: default
 ---
 
